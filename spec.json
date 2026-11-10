@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Bar Chart",
+    "font": "Comic Sans MS",
+    "fontSize": 24
+  },
   "data": {
     "values": [
       { "category": "A", "value": 28 },
@@ -13,7 +18,7 @@
       { "category": "H", "value": 87 }
     ]
   },
-  "mark": "bar",
+  "mark": { "type": "bar", "color": "green" },
   "encoding": {
     "x": { "field": "category", "type": "nominal" },
     "y": { "field": "value", "type": "quantitative" }
